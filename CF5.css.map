@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACR,KAAK,EAAE,IAAI;CACd;;AAED,AAAA,MAAM,CAAC,CAAC,CAAC,GAAG,CAAC;EACT,IAAI,EAAE,IAAI;CACb",
+    "sources": [
+        "CF5.scss"
+    ],
+    "names": [],
+    "file": "CF5.css"
+}
