@@ -4,14 +4,14 @@
 
 var movies = JSON.parse(movy);
 console.table(movies);
-for(var i = 0 ; i < 1; i++){
+for(var x = 0 ; x < 1; x++){
 	document.getElementById("result").innerHTML = `
 		<div>
-            <p>${movies[i].name}</p>
+            <p>${movies[x].name}</p>
             <hr>
-            <p id="${i}">Description:<br> <span class="likes">${movies[i].description}</span> </p>
-			<p id="${i}">Like <button class="plus"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes">${movies[i].likes}</span> </p>
-			<hr>
+            <p id="${x}">Description:<br> <span class="likes">${movies[x].description}</span> </p>
+			<p id="${x}">Like <button class="plus"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes">${movies[x].likes} </span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
+            <hr>
 		</div>
  	`;
 }
@@ -31,7 +31,7 @@ for(var x = 1 ; x < 2; x++){
             <p>${movies[x].name}</p>
             <hr>
             <p id="${x}">Description:<br> <span class="likes1">${movies[x].description}</span> </p>
-			<p id="${x}">Like <button class="plus1"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes1">${movies[i].likes}</span> </p>
+			<p id="${x}">Like <button class="plus1"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes1">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
 			<hr>
 		</div>
  	`;
@@ -56,7 +56,7 @@ for(var x = 2 ; x < 3; x++){
             <p>${movies[x].name}</p>
             <hr>
             <p id="${x}">Description:<br> <span class="likes2">${movies[x].description}</span> </p>
-			<p id="${x}">Like <button class="plus2"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes2">${movies[i].likes}</span> </p>
+			<p id="${x}">Like <button class="plus2"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes2">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
 			<hr>
 		</div>
  	`;
@@ -78,7 +78,7 @@ for(var x = 3 ; x < 4; x++){
             <p>${movies[x].name}</p>
             <hr>
             <p id="${x}">Description:<br> <span class="likes3">${movies[x].description}</span> </p>
-			<p id="${x}">Like <button class="plus3"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes3">${movies[i].likes}</span> </p>
+			<p id="${x}">Like <button class="plus3"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes3">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
 			<hr>
 		</div>
  	`;
@@ -99,7 +99,7 @@ for(var x = 4 ; x < 5; x++){
             <p>${movies[x].name}</p>
             <hr>
             <p id="${x}">Description:<br> <span class="likes4">${movies[x].description}</span> </p>
-			<p id="${x}">Like <button class="plus4"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes4">${movies[i].likes}</span> </p>
+			<p id="${x}">Like <button class="plus4"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes4">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
 			<hr>
 		</div>
  	`;
@@ -120,7 +120,7 @@ for(var x = 5 ; x < 6; x++){
             <p>${movies[x].name}</p>
             <hr>
             <p id="${x}">Description:<br> <span class="likes4">${movies[x].description}</span> </p>
-			<p id="${x}">Like <button class="plus5"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes5">${movies[i].likes}</span> </p>
+			<p id="${x}">Like <button class="plus5"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes5">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
 			<hr>
 		</div>
  	`;
@@ -132,3 +132,34 @@ for(var x = 5 ; x < 6; x++){
 			$(this).parent().find(".likes5").html(movies[index].likes);
 			console.table(movies);
         })})
+
+
+
+
+
+
+
+
+
+
+        // Verusch alles in eine funktion zu packen
+
+
+        // for(var x = 0 ; x < 7; x++){
+        //     document.getElementById("result2").innerHTML = `
+        //         <div>
+        //             <p>${movies[x].name}</p>
+        //             <hr>
+        //             <p id="${x}">Description:<br> <span class="likes2">${movies[x].description}</span> </p>
+        //             <p id="${x}">Like <button class="plus2"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes2">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
+        //             <hr>
+        //         </div>
+        //      `;
+        // }
+        //     $(document).ready(function(){
+        //         $(".plus2").on("click", function(){
+        //             var index = $(this).parent().attr("id");
+        //             movies[index].likes += 1;
+        //             $(this).parent().find(".likes2").html(movies[index].likes);
+        //             console.table(movies);
+        //         })})
