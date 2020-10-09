@@ -1,8 +1,28 @@
 .likeButton {
-  width: 2rem;
+  width: 20px;
+  background-color: green;
 }
 
 .movie p img {
   size: 2rem;
+}
+
+#header {
+  background-color: black;
+}
+
+.movie {
+  background-color: #201d1d;
+  border: 2rem solid #343a40;
+  padding-left: 0;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+#footerh {
+  text-align: center;
+}
+
+span {
+  line-height: 70%;
 }
 /*# sourceMappingURL=CF5.css.map */
