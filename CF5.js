@@ -144,22 +144,25 @@ for(var x = 5 ; x < 6; x++){
 
         // Verusch alles in eine funktion zu packen
 
+// var movies = JSON.parse(movy);
+// console.table(movies);
 
-        // for(var x = 0 ; x < 7; x++){
-        //     document.getElementById("result2").innerHTML = `
-        //         <div>
-        //             <p>${movies[x].name}</p>
-        //             <hr>
-        //             <p id="${x}">Description:<br> <span class="likes2">${movies[x].description}</span> </p>
-        //             <p id="${x}">Like <button class="plus2"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes2">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
-        //             <hr>
-        //         </div>
-        //      `;
-        // }
-        //     $(document).ready(function(){
-        //         $(".plus2").on("click", function(){
-        //             var index = $(this).parent().attr("id");
-        //             movies[index].likes += 1;
-        //             $(this).parent().find(".likes2").html(movies[index].likes);
-        //             console.table(movies);
-        //         })})
+//         for(var x = 0 ; x < movies.lenght; x++){
+//             document.getElementById("#content").innerHTML = `<div class="movie${x} row col-lg-6 col-md-6 text-white"><img class="img-fluid col-lg-6 py-2" src="./images/FellowshipOftheRing.jpg"><div class="col-lg-6 py-2"><p id="result${x}"></p></div></div>`
+//             document.getElementById(`result${x}`).innerHTML = `
+//                 <div>
+//                     <p>${movies[x].name}</p>
+//                     <hr>
+//                     <p id="${x}">Description:<br> <span class="likes2">${movies[x].description}</span> </p>
+//                     <p id="${x}">Like <button class="plus${x}"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes${x}">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
+//                     <hr>
+//                 </div>
+//              `;
+//         }
+//             $(document).ready(function(){
+//                 $(`.plus${x}`).on("click", function(){
+//                     var index = $(this).parent().attr("id");
+//                     movies[index].likes += 1;
+//                     $(this).parent().find(`.likes${x}`).html(movies[index].likes);
+//                     console.table(movies);
+//                 })})
