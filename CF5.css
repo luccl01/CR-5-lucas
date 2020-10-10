@@ -6,11 +6,19 @@
   background-color: black;
 }
 
+#navBar {
+  background-color: #201d1d;
+}
+
 .movie {
   background-color: #201d1d;
   border: 2rem solid #343a40;
   padding-left: 0;
   padding: 0.5rem 0 0.5rem 0;
+}
+
+.movie img {
+  border-radius: 50;
 }
 
 #footer {

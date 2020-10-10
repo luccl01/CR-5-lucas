@@ -136,13 +136,33 @@ for(var x = 5 ; x < 6; x++){
 
 
 
+// Versuch zu sortieren (funktioniert grob aber keine zeit mehr fertig zu stellen)
 
+
+
+document.getElementById('btn').addEventListener('click', sorting, false)
+function sorting(){
+    for (x=0; x < 4; x++){ 
+if (movies[2].likes > movies[0].likes){
+    document.getElementById('result').innerHTML = `<div>
+    <p>${movies[x].name}</p>
+    <hr>
+    <p id="${x}">Description:<br> <span class="likes1">${movies[x].description}</span> </p>
+    <p id="${x}">Like <button class="plus1"> <img class="likeButton" src="./images/129-1293150_file-like-svg-wikimedia-commons-png-youtube-blue.png"> </button> <span class="likes1">${movies[x].likes}</span><span class="rating">${movies[x].IMDb}-IMDb</span> </p>
+    <hr>
+</div>
+`;
+}}}
 
 
 
 
 
         // Verusch alles in eine funktion zu packen
+
+
+
+
 
 // var movies = JSON.parse(movy);
 // console.table(movies);
